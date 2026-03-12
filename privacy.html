@@ -37,7 +37,6 @@
     <ul>
       <li><strong>Food photos</strong> — When you use AI food scanning, your photo is sent to Google's Gemini API solely to identify food and estimate nutrition. Photos are not stored on any CRAVE server.</li>
       <li><strong>Health & nutrition data</strong> — Calorie, macro, and food log data you enter is stored locally on your device and optionally synced via your personal iCloud account.</li>
-      <li><strong>Apple Health data</strong> — With your permission, CRAVE reads active energy burned from Apple Health to surface insights. We do not write to or share your Health data.</li>
       <li><strong>Subscription status</strong> — Managed entirely by Apple. We do not store your payment information.</li>
     </ul>
 
@@ -55,7 +54,11 @@
     <ul>
       <li><strong>Google Gemini API</strong> — Used to analyze food photos. Images are sent to Google's servers for processing. Google's privacy policy applies to this processing. Images are not retained by CRAVE.</li>
       <li><strong>Apple StoreKit</strong> — Handles all subscription purchases. Apple's privacy policy governs payment processing.</li>
-      <li><strong>Apple HealthKit</strong> — Read-only access to active energy data, with your permission.</li>
+                                                                            
+          <li><strong>Supabase</strong> — Used for referral tracking. If you   
+  enter a referral code during onboarding, an anonymous device identifier and  
+  referral event are stored on Supabase's servers. No personally identifiable  
+  information is included.</li>  
     </ul>
     <p>We do not use advertising SDKs, analytics platforms, or sell your data to any third party.</p>
 
